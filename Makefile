@@ -3,7 +3,7 @@
 #
 init:
 	@echo "Installing dependecies using bower..."
-	mkdir -p tmp && TMP=tmp bower install && rm -rf tmp
+	bower install
 
 #
 # Build project
@@ -13,14 +13,16 @@ build:
 	cd components/bootstrap && make bootstrap && cd ../..
 	cp -a components/bootstrap/bootstrap assets/bootstrap
 	@echo "Compiling LESS to minimized CSS..."
-	for f in css/*.less; do lessc -x $f > ${f/.less/.css}; done
+	for f in ./css/*.less; do \
+		lessc -x $$f > $${f/.less/.css}; \
+	done
 
 #
 # Update project dependencies
 #
 update:
 	@echo "Updating dependencies with bower..."
-	mkdir -p tmp && TMP=tmp bower update && rm -rf tmp
+	bower update
 	@echo "Building project..."
 	make build
 

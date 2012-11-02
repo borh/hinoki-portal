@@ -11,6 +11,7 @@ init:
 build:
 	@echo "Building Twitter Bootstrap components..."
 	cd components/bootstrap && make bootstrap && cd ../..
+	rm -rf assets/bootstrap
 	cp -a components/bootstrap/bootstrap assets/bootstrap
 	@echo "Compiling LESS to minimized CSS..."
 	for f in ./css/*.less; do \

@@ -5,11 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="author" content="Tokyo Tech International Student Center."/>
     <meta name="description" content="Hinoki Project: Learning systems and resources for Japanese: Asunaro, Natsume, Nutmeg, Natane"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--
-    <link href="assets/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet" type="text/css"/>
-    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="shortcut icon" href="images/hinoki-favicon.png" type="image/png"/>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
@@ -29,20 +25,34 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container">
-      <div class="navbar navbar-default">
-        <ul class="nav navbar-nav">
-          <li class="visible-desktop"><a href="http://www.titech.ac.jp/">東京工業大学</a></li>
-          <li class="hidden-phone"><a href="http://www.ryu.titech.ac.jp/">留学生センター</a></li>
-          <li class="hidden-phone"><a href="home/">仁科研究室</a></li>
-          <li class="active"><a href="#">ヒノキ <small>プロジェクト</small></a></li>
-        </ul>
-        <form class="navbar-form navbar-right hidden-phone" role="search" method="get" action="http://www.google.com/search">
-          <div>
-            <input type="text" class="search-query form-control" placeholder="Search" name="q"/>
-            <input type="hidden" value="www.hinoki-project.org"/>
-          </div>
-        </form>
+    <div class="container sky">
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ヒノキ <small>プロジェクト</small></a>
+          <ul class="nav navbar-nav">
+            <li class="visible-desktop"><a href="asunaro/">あすなろ</a></li>
+            <li class="visible-desktop"><a href="natsume/">なつめ</a></li>
+            <li class="visible-desktop"><a href="natane/">なたね</a></li>
+            <li class="visible-desktop"><a href="nutmeg/">ナツメグ</a></li>
+          </ul>
+          <!--
+            <ul class="nav navbar-nav">
+            <li class="visible-desktop"><a href="http://www.titech.ac.jp/">東京工業大学</a></li>
+            <li class="hidden-phone"><a href="http://www.ryu.titech.ac.jp/">留学生センター</a></li>
+            <li class="hidden-phone"><a href="home/">仁科研究室</a></li>
+            <li ></li>
+          </ul>
+            -->
+          <!-- https://stackoverflow.com/questions/275153/how-can-i-add-an-integrated-google-search-to-my-website -->
+          <!--
+              <form class="navbar-form hidden-phone" role="search" method="get" action="http://www.google.com/search">
+                <div>
+                  <input type="text" class="search-query form-control" placeholder="Search" name="q"/>
+                  <input type="hidden" value="www.hinoki-project.org"/>
+                </div>
+            </form>
+              -->
+        </div>
       </div>
 
       <div class="tree-background">
@@ -51,48 +61,60 @@
 
       <div class="under-tree">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="fixed-desc phone-align right">
               <p class="info">多言語対応<br/>日本語読解学習支援システム</p>
+              <h2>あすなろ</h2>
+              <!--
               <img class="image-icon" src="images/asunaro-icon-64.png" alt="Asunaro logo (Thujopsis dolabrata)"/>
               <a class="btn btn-custom btn-large" href="asunaro/main.php?lang=jp" title="「あすなろ」へ">
                 あすなろ<span class="arrow">➟</span>
               </a>
+              -->
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="fixed-desc phone-align left">
               <p class="info">共起検索を用いた<br/>日本語作文支援システム</p>
+              <h2>なつめ</h2>
+              <!--
               <img class="image-icon" src="images/natsume-icon-64.png" alt="Natsume logo (Ziziphus jujuba)"/>
               <a class="btn btn-custom btn-large" href="natsume/" title="「なつめ」へ">
                 なつめ　<span class="arrow">➟</span>
               </a>
+              -->
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="fixed-desc phone-align right">
-              <p class="info">日本語学習者誤用コーパス</p><br/>
+              <p class="info">日本語学習者誤用コーパス</p>
+              <h2>なたね</h2>
+              <!--
               <img class="image-icon" src="images/natane-icon-64.png" alt="Natane logo (Brassica rapa)"/>
               <a class="btn btn-custom btn-large" href="natane/" title="「なたね」へ">
                 なたね　<span class="arrow">➟</span>
               </a>
+              -->
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="fixed-desc phone-align left">
               <p class="info">BCCWJとなたねを用いた日本語自動添削・作文支援システム</p>
+              <h2>ナツメグ</h2>
+              <!--
               <img class="image-icon" src="images/nutmeg-icon-64.png" alt="Nutmeg logo (Myristica fragrans)"/>
               <a class="btn btn-custom btn-large" href="nutmeg/" title="「ナツメグ」へ">
                 ナツメグ<span class="arrow">➟</span>
               </a>
+              -->
             </div>
           </div>
         </div>
       </div>
       <div class="footer green-fade">
-        <p>Copyright 2002-2012 Tokyo Tech International Student Center, all rights reserved. | <a href="https://github.com/borh/hinoki-portal">github project page</a></p>
+        <p>Copyright 2002-2014 Tokyo Tech International Student Center, all rights reserved. | <a href="https://github.com/borh/hinoki-portal">github project page</a></p>
       </div>
     </div>
 

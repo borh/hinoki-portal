@@ -12,21 +12,38 @@ $buttonWhite: #e2f0d5;
 $sky: #D6ECFF;
 $arrowColor: #6BA038;
 
-navbar {
-    @extend .navbar-default;
-}
+// FIXME extending bootstrap default classes
+// navbar {
+//     @extend .navbar-default;
+// }
+
+// navbar overrides
+$navbar-default-color:             blue !default;
+$navbar-default-bg:                green !default;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+
 
 .tree-background {
     color: $darkGreenFont;
     background: url('../images/tree-320.png') no-repeat top;
     height: 320px;
     border-bottom: 5px solid $hinokiGreen;
+    h2 {
+        font-weight: bold;
+    }
 }
 
-.container {
-    background-image: -webkit-linear-gradient(top, $sky, white);
-    background-image: -moz-linear-gradient(top, $sky, white);
+.sky {
+    background: -webkit-linear-gradient(top, $sky, white);
+    background: -moz-linear-gradient(top, $sky, white);
+    background: linear-gradient(top, $sky, white);
     min-width: 295px;
+    padding: 0px;
+    box-shadow: 0px 0px 15px #888888;
+}
+
+.navbar-brand {
+    font-weight: bold;
 }
 
 p.title {
@@ -40,6 +57,7 @@ p.title {
 p.info {
     font-size: 16px;
     color: $darkGreenFont;
+    min-height: 44px;
 }
 
 .fixed-desc {
@@ -74,7 +92,6 @@ img.image-icon {
 
 div.under-tree {
     background: $greenBackground;
-    //background: url('../img/4183270344_5086381d47_t.jpg') repeat top;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -86,8 +103,10 @@ div.under-tree {
 
 /* http://charliepark.org/bootstrap_buttons/ */
 
+/*
 .btn-custom { background-color: hsl(90, 48%, 47%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$buttonWhite", endColorstr="$hinokiGreen"); background-image: -khtml-gradient(linear, left top, left bottom, from($buttonWhite), to($hinokiGreen)); background-image: -moz-linear-gradient(top, $buttonWhite, $hinokiGreen); background-image: -ms-linear-gradient(top, $buttonWhite, $hinokiGreen); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $buttonWhite), color-stop(100%, $hinokiGreen)); background-image: -webkit-linear-gradient(top, $buttonWhite, $hinokiGreen); background-image: -o-linear-gradient(top, $buttonWhite, $hinokiGreen); background-image: linear-gradient($buttonWhite, $hinokiGreen); border-color: $hinokiGreen $hinokiGreen hsl(90, 48%, 36.5%); color: $darkGreenFont !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.69); -webkit-font-smoothing: antialiased; vertical-align:bottom; font-size: 30px; text-align: left; font-weight: bold;}
 
 .arrow {
     color: $arrowColor;
 }
+*/

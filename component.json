@@ -1,9 +1,0 @@
-{
-  "name": "hinoki-portal",
-  "description": "Landing page for the Hinoki project at Tokyo Tech.",
-  "version": "1.0.0",
-  "main": ["index.html", "css/hinoki.css"],
-  "dependencies": {
-    "bootstrap": "~2"
-  }
-}

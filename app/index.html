@@ -26,14 +26,14 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="container sky">
-      <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="navbar-default" role="navigation">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">ヒノキ <small>プロジェクト</small></a>
+          <a class="navbar-brand" href="#">Hinoki<small>プロジェクト</small></a>
           <ul class="nav navbar-nav">
-            <li class="visible-desktop"><a href="asunaro/">あすなろ</a></li>
-            <li class="visible-desktop"><a href="natsume/">なつめ</a></li>
-            <li class="visible-desktop"><a href="natane/">なたね</a></li>
-            <li class="visible-desktop"><a href="nutmeg/">ナツメグ</a></li>
+            <li class="hidden-xs"><a href="asunaro/">あすなろ</a></li>
+            <li class="hidden-xs"><a href="natsume/">なつめ</a></li>
+            <li class="hidden-xs"><a href="natane/">なたね</a></li>
+            <li class="hidden-xs"><a href="nutmeg/">ナツメグ</a></li>
           </ul>
           <!--
             <ul class="nav navbar-nav">
@@ -56,75 +56,74 @@
       </div>
 
       <div class="tree-background">
-        <h2>日本語学習支援システムを使ってみよう</h2>
+        <div class="shout">
+          <h2>日本語学習支援システムを使ってみよう！</h2>
+        </div>
+        <div class="summary">
+          <p>ひのきプロジェクトでは、日本語学習者のための様々な学習支援・検索システムを無料で公開している。以下の4システムから選んでください。</p>
+        </div>
       </div>
 
       <div class="under-tree">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="fixed-desc phone-align right">
-              <p class="info">多言語対応<br/>日本語読解学習支援システム</p>
+
+        <div class="system-btn">
+          <a href="asunaro/">
+            <div class="row">
+              <h3>多言語対応日本語読解学習支援システム</h3>
+            </div>
+            <div class="row">
               <h2>あすなろ</h2>
-              <!--
-              <img class="image-icon" src="images/asunaro-icon-64.png" alt="Asunaro logo (Thujopsis dolabrata)"/>
-              <a class="btn btn-custom btn-large" href="asunaro/main.php?lang=jp" title="「あすなろ」へ">
-                あすなろ<span class="arrow">➟</span>
-              </a>
-              -->
             </div>
+          </a>
           </div>
-          <div class="col-sm-6">
-            <div class="fixed-desc phone-align left">
-              <p class="info">共起検索を用いた<br/>日本語作文支援システム</p>
-              <h2>なつめ</h2>
-              <!--
-              <img class="image-icon" src="images/natsume-icon-64.png" alt="Natsume logo (Ziziphus jujuba)"/>
-              <a class="btn btn-custom btn-large" href="natsume/" title="「なつめ」へ">
-                なつめ　<span class="arrow">➟</span>
-              </a>
-              -->
-            </div>
+          <div class="system-btn">
+            <a href="natsume/">
+              <div class="row">
+                <h3>日本語共起語検索システム</h3>
+              </div>
+              <div class="row">
+                <h2>なつめ</h2>
+                <!--<img src="images/natsume-collocations.png" alt="「実験」の共起語（ガ格）" class="img-thumbnail"><img src="images/natsume-examples.png" alt="科学技術論文コーパスにおける「実験が行われる」の例文" class="img-thumbnail">-->
+              </div>
+            </a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="fixed-desc phone-align right">
-              <p class="info">日本語学習者誤用コーパス</p>
-              <h2>なたね</h2>
-              <!--
-              <img class="image-icon" src="images/natane-icon-64.png" alt="Natane logo (Brassica rapa)"/>
-              <a class="btn btn-custom btn-large" href="natane/" title="「なたね」へ">
-                なたね　<span class="arrow">➟</span>
-              </a>
-              -->
-            </div>
+          <div class="system-btn">
+            <a href="natane/">
+              <div class="row">
+                <h3>日本語学習者作文コーパス</h3>
+              </div>
+              <div class="row">
+                <h2>なたね</h2>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-6">
-            <div class="fixed-desc phone-align left">
-              <p class="info">BCCWJとなたねを用いた日本語自動添削・作文支援システム</p>
-              <h2>ナツメグ</h2>
-              <!--
-              <img class="image-icon" src="images/nutmeg-icon-64.png" alt="Nutmeg logo (Myristica fragrans)"/>
-              <a class="btn btn-custom btn-large" href="nutmeg/" title="「ナツメグ」へ">
-                ナツメグ<span class="arrow">➟</span>
-              </a>
-              -->
-            </div>
+          <div class="system-btn">
+            <a href="nutmeg/">
+              <div class="row">
+                <h3>日本語作文推敲支援システム</h3>
+              </div>
+              <div class="row">
+                <h2>ナツメグ</h2>
+              </div>
+            </a>
           </div>
-        </div>
+
       </div>
       <div class="footer green-fade">
-        <p>Copyright 2002-2014 Tokyo Tech International Student Center, all rights reserved. | <a href="https://github.com/borh/hinoki-portal">github project page</a></p>
+        <p>© 2002-2014 Hinokiプロジェクト | <a href="https://github.com/borh/hinoki-portal">githubソース</a></p>
       </div>
     </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <!-- We don't use any JS yet....
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    -->
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
+    <!-- We don't use any JS yet....
     <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
     <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
     <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
@@ -137,6 +136,7 @@
     <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+    -->
     <!-- endbuild -->
   </body>
 </html>

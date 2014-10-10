@@ -9,41 +9,64 @@ $hinokiGreen: #7FBD43;
 $lightGreen: #D2E3A1;
 $greenBackground: #B3CC90;
 $buttonWhite: #e2f0d5;
-$sky: #D6ECFF;
+$sky: #E4F7FE;
 $arrowColor: #6BA038;
 
-// FIXME extending bootstrap default classes
-// navbar {
-//     @extend .navbar-default;
-// }
+//.custom-navbar {
+//    @extend .navbar;
+//    @extend .navbar-default;
+//    @extend .navbar-static-top;
+//    color: $navbar-default-color;
+//    background-color: $navbar-default-bg !important;
+//    border-color: $navbar-default-border;
+//}
 
-// navbar overrides
-$navbar-default-color:             blue !default;
-$navbar-default-bg:                green !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+body {
+    background: lighten($lightGreen, 15%); //$sky;
+}
 
+.sky {
+    //background: -webkit-linear-gradient(top, $sky, $lightGreen);
+    //background: -moz-linear-gradient(top, $sky, $lightGreen);
+    //background: -o-linear-gradient(top, $sky, $lightGreen);
+    //background: linear-gradient(to bottom, $sky, $lightGreen);
+    padding: 0px;
+    height: 100%;
+    //box-shadow: 0px 0px 20px $lightGreen;
+    //border-color: $hinokiGreen;
+    //border-style: solid;
+    //border-width: 0 1px 0 1px;
+}
 
 .tree-background {
-    color: $darkGreenFont;
-    background: url('../images/tree-320.png') no-repeat top;
-    height: 320px;
-    border-bottom: 5px solid $hinokiGreen;
+    background: url('../images/tree-320.png') no-repeat right 10px center;
+    height: 330px;
+    border-bottom: 10px solid $hinokiGreen;
+}
+
+.shout {
     h2 {
+        @media only screen and (max-width: 767px) { background: rgba(255,255,255,0.5); }
+        display: inline-block;
+        color: $darkGreenFont;
+        padding: 0 10px 0 10px;
         font-weight: bold;
     }
 }
 
-.sky {
-    background: -webkit-linear-gradient(top, $sky, white);
-    background: -moz-linear-gradient(top, $sky, white);
-    background: linear-gradient(top, $sky, white);
-    min-width: 295px;
-    padding: 0px;
-    box-shadow: 0px 0px 15px #888888;
+.summary {
+    @extend .col-sm-6;
+    @extend .col-md-8;
+    @extend .col-lg-8;
+    @media only screen and (max-width: 767px) { background: rgba(255,255,255,0.5); }
+    p {
+        font-size: 18px;
+    }
 }
 
 .navbar-brand {
     font-weight: bold;
+    font-size: 22px;
 }
 
 p.title {
@@ -54,59 +77,128 @@ p.title {
     display: inline;
 }
 
-p.info {
-    font-size: 16px;
-    color: $darkGreenFont;
-    min-height: 44px;
+.under-tree {
+    background: $greenBackground;
+    //padding-bottom: 10px;
+    //padding-top: 10px;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: center;
 }
 
-.fixed-desc {
-    //background: $lightGreen;
+.system-btn {
+    @extend .col-xs-offset-1;
+    @extend .col-xs-11;
+    @extend .col-sm-offset-1;
+    @extend .col-sm-11;
+    @extend .col-md-offset-1;
+    @extend .col-md-11;
+    @extend .col-lg-offset-1;
+    @extend .col-lg-11;
+
+    @extend .btn;
+
+    //@extend .center-block;
+
+    white-space: break-word; // This helps text folding, but is too aggresive??
+    display: inline-block;
+    float: none;
+    text-align: left;
+
+    height: 150px;
+    min-width: 250px;
+
     background: rgb(255, 255, 255) transparent; /* default fallback */
     background: rgba(255, 255, 255, 0.6); /* nice browsers */
-    width: 270px;
-    padding: 15px 5px 15px 10px;
-    margin: 10px 5px 10px 5px;
-    @media only screen and (min-width: 430px) { border-radius: 15px; }
-}
-
-@media all and (max-width: 770px) {
-    .phone-align {
-        margin-left:auto;
-        margin-right:auto;
+    //width: 270px;
+    //padding: 15px 5px 15px 10px;
+    margin: 20px;
+    //@media only screen and (min-width: 430px) { border-radius: 15px; }
+    a:link {
+        color: $darkGreenFont;
+        text-decoration: none;
+    }
+    h2 {
+        @extend .col-lg-4;
+        color: $darkGreenFont;
+        font-weight: bold;
+    }
+    h3 {
+        @extend .col-lg-4;
+    }
+    span {
+        color: $darkGreenFont;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    p {
+        font-size: 16px;
+        color: $darkGreenFont;
     }
 }
 
-@media all and (min-width: 771px) {
-    .right {
-        float: right;
-    }
-    .left {
-        float: left;
-    }
-}
-
-img.image-icon {
-    vertical-align: middle;
-}
-
-div.under-tree {
-    background: $greenBackground;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.green-fade {
+.footer {
+    //@extend .navbar;
+    //@extend .navbar-static-bottom;
+    background: $lightGreen;
     text-align: center;
-    border-top: 5px solid $hinokiGreen;
+    //vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-top: 10px solid $hinokiGreen;
 }
 
-/* http://charliepark.org/bootstrap_buttons/ */
-
-/*
-.btn-custom { background-color: hsl(90, 48%, 47%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$buttonWhite", endColorstr="$hinokiGreen"); background-image: -khtml-gradient(linear, left top, left bottom, from($buttonWhite), to($hinokiGreen)); background-image: -moz-linear-gradient(top, $buttonWhite, $hinokiGreen); background-image: -ms-linear-gradient(top, $buttonWhite, $hinokiGreen); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $buttonWhite), color-stop(100%, $hinokiGreen)); background-image: -webkit-linear-gradient(top, $buttonWhite, $hinokiGreen); background-image: -o-linear-gradient(top, $buttonWhite, $hinokiGreen); background-image: linear-gradient($buttonWhite, $hinokiGreen); border-color: $hinokiGreen $hinokiGreen hsl(90, 48%, 36.5%); color: $darkGreenFont !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.69); -webkit-font-smoothing: antialiased; vertical-align:bottom; font-size: 30px; text-align: left; font-weight: bold;}
-
-.arrow {
-    color: $arrowColor;
+// http://smarchal.com/twbscolor/?bd=e74c3c&bh=c0392b&cd=ecf0f1&ch=ffbbbc
+$bgDefault      : $lightGreen;//#60c0ff;
+$bgHighlight    : $darkGreenFont;//#004979;
+$colDefault     : #000000;
+$colHighlight   : #ffffff;
+.navbar-default {
+	background-color: $bgDefault;
+	border-color: $bgHighlight;
+	.navbar-brand {
+		color: $colDefault;
+		&:hover, &:focus {
+			color: $colHighlight; }}
+	.navbar-text {
+		color: $colDefault; }
+	.navbar-nav {
+		> li {
+			> a {
+				color: $colDefault;
+				&:hover,  &:focus {
+					color: $colHighlight; }}}
+		> .active {
+			> a, > a:hover, > a:focus {
+				color: $colHighlight;
+				background-color: $bgHighlight; }}
+		> .open {
+			> a, > a:hover, > a:focus {
+				color: $colHighlight;
+				background-color: $bgHighlight; }}}
+	.navbar-toggle {
+		border-color: $bgHighlight;
+		&:hover, &:focus {
+			background-color: $bgHighlight; }
+		.icon-bar {
+			background-color: $colDefault; }}
+	.navbar-collapse,
+	.navbar-form {
+		border-color: $colDefault; }
+	.navbar-link {
+		color: $colDefault;
+		&:hover {
+			color: $colHighlight; }}}
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		> li > a {
+			color: $colDefault;
+			&:hover, &:focus {
+				color: $colHighlight; }}
+		> .active {
+			> a, > a:hover, > a:focus, {
+				color: $colHighlight;
+				background-color: $bgHighlight; }}}
 }
-*/

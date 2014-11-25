@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" class="no-js">
+  <head>
+    <title>Hinokiプロジェクト：日本語学習システムあすなろ、なつめ、なたね、ナツメグ</title>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Hinokiプロジェクト"/>
+    <meta name="description" content="Hinokiプロジェクト：日本語学習システムあすなろ、なつめ、なたね、ナツメグ"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="images/hinoki-favicon.png" type="image/png"/>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link href="styles/main.css" media="screen" rel="stylesheet" type="text/css"/>
+    <!-- endbuild -->
+
+  </head>
+
+  <body>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container sky">
+      <div class="navbar-default" role="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hinoki <small>プロジェクト</small></a>
+          <ul class="nav navbar-nav">
+            <li class="hidden-xs"><a href="asunaro/">あすなろ</a></li>
+            <li class="hidden-xs"><a href="natsume/">なつめ</a></li>
+            <li class="hidden-xs"><a href="natane/">なたね</a></li>
+            <li class="hidden-xs"><a href="nutmeg/">ナツメグ</a></li>
+          </ul>
+          <!--
+            <ul class="nav navbar-nav">
+            <li class="visible-desktop"><a href="http://www.titech.ac.jp/">東京工業大学</a></li>
+            <li class="hidden-phone"><a href="http://www.ryu.titech.ac.jp/">留学生センター</a></li>
+            <li class="hidden-phone"><a href="home/">仁科研究室</a></li>
+            <li ></li>
+          </ul>
+            -->
+          <!-- https://stackoverflow.com/questions/275153/how-can-i-add-an-integrated-google-search-to-my-website -->
+          <!--
+              <form class="navbar-form hidden-phone" role="search" method="get" action="http://www.google.com/search">
+                <div>
+                  <input type="text" class="search-query form-control" placeholder="Search" name="q"/>
+                  <input type="hidden" value="www.hinoki-project.org"/>
+                </div>
+            </form>
+              -->
+        </div>
+      </div>
+
+      <div class="tree-background">
+        <div class="shout">
+          <h2>日本語学習支援システムを使ってみよう！</h2>
+        </div>
+        <div class="summary">
+          <p>ひのきプロジェクトでは、日本語学習者のための様々な学習支援・検索システムを無料で公開している。</p>
+          <p>以下の4システムからお選びください。</p>
+        </div>
+      </div>
+
+      <div class="under-tree">
+
+        <div class="system-btn">
+          <a href="asunaro/">
+            <div class="row">
+              <h3>多言語対応<br class="visible-xs"/>日本語読解学習支援システム</h3>
+            </div>
+            <div class="row">
+              <h2>あすなろ</h2>
+            </div>
+          </a>
+          </div>
+          <div class="system-btn">
+            <a href="natsume/">
+              <div class="row">
+                <h3>日本語共起語検索システム</h3>
+              </div>
+              <div class="row">
+                <h2>なつめ</h2>
+                <!--
+                <img src="images/natsume-collocations.png" alt="「実験」の共起語（ガ格）" class="img-thumbnail">
+                <img src="images/natsume-examples.png" alt="科学技術論文コーパスにおける「実験が行われる」の例文" class="img-thumbnail">
+                -->
+              </div>
+            </a>
+          </div>
+          <div class="system-btn">
+            <a href="natane/">
+              <div class="row">
+                <h3>日本語学習者作文コーパス</h3>
+              </div>
+              <div class="row">
+                <h2>なたね</h2>
+              </div>
+            </a>
+          </div>
+          <div class="system-btn">
+            <a href="nutmeg/">
+              <div class="row">
+                <h3>日本語作文推敲支援システム</h3>
+              </div>
+              <div class="row">
+                <h2>ナツメグ</h2>
+              </div>
+            </a>
+          </div>
+
+      </div>
+      <div class="footer green-fade">
+        <p>© 2002-2014 Hinokiプロジェクト | <a href="https://github.com/borh/hinoki-portal">githubソース</a></p>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- We don't use any JS yet....
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <!-- We don't use any JS yet....
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+    -->
+    <!-- endbuild -->
+  </body>
+</html>

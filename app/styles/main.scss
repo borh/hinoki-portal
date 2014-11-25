@@ -26,8 +26,11 @@ body {
 }
 
 a {
-    &:hover, &:link, &:active, &:visited {
+    &:link, &:active, &:visited {
         color: inherit;
+    }
+    &:hover {
+        color: $darkGreenFont !important;
     }
 }
 

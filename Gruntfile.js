@@ -317,6 +317,7 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.webp',
+                        '*.var',
                         '{,*/}*.html*',
                         'styles/fonts/{,*/}*.*'
                     ]
@@ -397,7 +398,7 @@ module.exports = function (grunt) {
         'autoprefixer',
         'concat',
         'cssmin',
-        'uglify',
+        //'uglify', // no JS yet
         'copy:dist',
         'rev',
         'usemin',

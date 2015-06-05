@@ -1,0 +1,25 @@
+---
+template:
+  title:
+  author:
+  description:
+
+  navbar_brand: ""
+
+  asunaro_name:
+  asunaro_description: ""
+
+  natsume_name:
+  natsume_description:
+
+  natane_name:
+  natane_description:
+
+  nutmeg_name:
+  nutmeg_description:
+
+  shout:
+  summary: ""
+
+  footer_copyright:
+  footer_source_link: "https://github.com/borh/hinoki-portal"

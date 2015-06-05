@@ -1,0 +1,27 @@
+---
+en:
+  language: en
+  title: "Hinoki Project's Learning Systems and Resources for Japanese: Asunaro, Natsume, Natane, Nutmeg"
+  author: Hinoki Project
+  description: "Hinoki Project: Learning systems and resources for Japanese: Asunaro, Natsume, Nutmeg, Natane"
+
+  navbar_brand: Hinoki Project
+
+  asunaro_name: Asunaro
+  asunaro_description: Multi-Lingual Reading Assistance System
+
+  natsume_name: Natsume
+  natsume_description: Collocation Search System
+
+  natane_name: Natane
+  natane_description: Japanese Learners Corpus
+
+  nutmeg_name: Nutmeg
+  nutmeg_description: Composition Assistance System
+
+  shout: Japanese Language Learning Systems
+  summary: "<p>The Hinoki Project offers various learning and search systems for learners of Japanese.</p>
+  <p>Please try them all!</p>"
+
+  footer_copyright: © 2002-2015 Hinoki Project
+  footer_source_link: "https://github.com/borh/hinoki-portal"

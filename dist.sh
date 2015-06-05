@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grunt build && rsync -avP dist/* hinoki:/var/www/html/
+boot middleman -e build && rsync -avP target/* hinoki:/var/www/html/

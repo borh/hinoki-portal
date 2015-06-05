@@ -1,0 +1,78 @@
+<div class="container sky">
+  <div class="navbar-default" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><%= t(:navbar_brand) %></a>
+      <ul class="nav navbar-nav">
+        <li class="hidden-xs"><a href="asunaro/"><%= t(:asunaro_name) %></a></li>
+        <li class="hidden-xs"><a href="natsume/"><%= t(:natsume_name) %></a></li>
+        <li class="hidden-xs"><a href="natane/"><%= t(:natane_name) %></a></li>
+        <li class="hidden-xs"><a href="nutmeg/"><%= t(:nutmeg_name) %></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">English</a></li>
+        <li><a href="ja/index.html">日本語</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tree-background">
+    <div class="shout">
+      <h2><%= t(:shout) %></h2>
+    </div>
+    <div class="summary">
+      <%= t(:summary) %>
+    </div>
+  </div>
+
+  <div class="under-tree">
+
+    <div class="system-btn">
+      <a href="asunaro/">
+        <div class="row">
+          <h3><%= t(:asunaro_description) %></h3>
+        </div>
+        <div class="row">
+          <h2><%= t(:asunaro_name) %></h2>
+        </div>
+      </a>
+      </div>
+      <div class="system-btn">
+        <a href="natsume/">
+          <div class="row">
+            <h3><%= t(:natsume_description) %></h3>
+          </div>
+          <div class="row">
+            <h2><%= t(:natsume_name) %></h2>
+            <!--
+            <img src="images/natsume-collocations.png" alt="「実験」の共起語（ガ格）" class="img-thumbnail">
+            <img src="images/natsume-examples.png" alt="科学技術論文コーパスにおける「実験が行われる」の例文" class="img-thumbnail">
+            -->
+          </div>
+        </a>
+      </div>
+      <div class="system-btn">
+        <a href="natane/">
+          <div class="row">
+            <h3><%= t(:natane_description) %></h3>
+          </div>
+          <div class="row">
+            <h2><%= t(:natane_name) %></h2>
+          </div>
+        </a>
+      </div>
+      <div class="system-btn">
+        <a href="nutmeg/">
+          <div class="row">
+            <h3><%= t(:nutmeg_description) %></h3>
+          </div>
+          <div class="row">
+            <h2><%= t(:nutmeg_name) %></h2>
+          </div>
+        </a>
+      </div>
+
+  </div>
+  <div class="footer green-fade">
+    <p><%= t(:footer_copyright) %> | <a href="<%= t(:footer_source_link) %>">Github</a></p>
+  </div>
+</div>

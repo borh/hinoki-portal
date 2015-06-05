@@ -1,8 +1,9 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+//$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
 
-// bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
-// endbower
+//@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+//@import 'bootstrap-sass/assets/stylesheets/bootstrap.scss';
+@import 'bootstrap';
 
 $darkGreenFont: #496D26;
 $hinokiGreen: #7FBD43;
@@ -20,6 +21,7 @@ $arrowColor: #6BA038;
 //    background-color: $navbar-default-bg !important;
 //    border-color: $navbar-default-border;
 //}
+
 
 body {
     background: white; //lighten($lightGreen, 15%); //$sky;

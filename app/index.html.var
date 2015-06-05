@@ -1,9 +1,0 @@
-URI: index
-
-URI: index.ja.html
-Content-type: text/html
-Content-language: ja
-
-URI: index.en.html
-Content-type: text/html
-Content-language: en

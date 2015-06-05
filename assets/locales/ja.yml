@@ -1,0 +1,27 @@
+---
+ja:
+  language: ja
+  title: Hinokiプロジェクト：日本語学習システムあすなろ、なつめ、なたね、ナツメグ
+  author: Hinokiプロジェクト
+  description: Hinokiプロジェクト：日本語学習システムあすなろ、なつめ、なたね、ナツメグ
+
+  navbar_brand: Hinoki プロジェクト
+
+  asunaro_name: あすなろ
+  asunaro_description: "多言語対応<br class=\"visible_xs\"/>日本語読解学習支援システム"
+
+  natsume_name: なつめ
+  natsume_description: 日本語共起語検索システム
+
+  natane_name: なたね
+  natane_description: 日本語学習者作文コーパス
+
+  nutmeg_name: ナツメグ
+  nutmeg_description: 日本語作文推敲支援システム
+
+  shout: 日本語学習支援システムを使ってみよう！
+  summary: "<p>ひのきプロジェクトでは、日本語学習者のための様々な学習支援・検索システムを無料で公開している。</p>
+  <p>以下の4システムからお選びください。</p>"
+
+  footer_copyright: © 2002-2015 Hinokiプロジェクト
+  footer_source_link: "https://github.com/borh/hinoki-portal"

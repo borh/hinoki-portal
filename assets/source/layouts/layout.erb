@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%= t(:language) %>" xml:lang="<%= t(:language) %>" class="no-js">
+  <head>
+    <title><%= t(:title) %></title>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="<%= t(:author) %>"/>
+    <meta name="description" content="<%= t(:description) %>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="images/hinoki-favicon.png" type="image/png"/>
+    <%= stylesheet_link_tag "main" %>
+    <!--<%= javascript_include_tag "all" %>-->
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <%= yield %>
+  </body>
+</html>

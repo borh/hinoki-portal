@@ -6,24 +6,18 @@ Everything needed to build and maintain the [Hinoki portal site](http://www.hino
 
 ## Prerequisites
 
-You need [node.js](http://nodejs.org/) to install [yeoman](http://yeoman.io/), which is used to download external dependencies like [Grunt](http://gruntjs.com/) and [Twitter Bootstrap](http://getbootstrap.com/).
+You need [boot](https://github.com/boot-clj/boot) (and thus the JVM).
 
 ## Usage
 
-Use the provided Grunt setup to develop and distribute the project website. A common workflow is:
-
-Viewing the website locally:
+Rebuild on file change:
 
 ```bash
-grunt serve
+boot watch middleman
 ```
 
-Building the project into the `dist/` subfolder:
+Building the production project into the `target/` subfolder:
 
 ```bash
-grunt build
+boot middleman -e build
 ```
-
-## Updating external dependencies
-
-TODO

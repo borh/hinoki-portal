@@ -9,7 +9,7 @@
         <li class="hidden-xs"><a href="nutmeg/"><%= t(:nutmeg_name) %></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">English</a></li>
+        <li><a href="en/index.html">English</a></li>
         <li><a href="ja/index.html">日本語</a></li>
       </ul>
     </div>
@@ -20,7 +20,9 @@
       <h2><%= t(:shout) %></h2>
     </div>
     <div class="summary">
-      <%= t(:summary) %>
+      <p class="text-justify">
+        <%= t(:summary) %>
+      </p>
     </div>
   </div>
 
@@ -71,6 +73,14 @@
         </a>
       </div>
 
+  </div>
+  <div class="well">
+    <h2>
+      <%= t(:member_description_title) %>
+    </h2>
+    <p class="text-justify">
+      <%= t(:member_description) %>
+    </p>
   </div>
   <div class="footer green-fade">
     <p><%= t(:footer_copyright) %> | <a href="<%= t(:footer_source_link) %>">Github</a></p>
